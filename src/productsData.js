@@ -385,7 +385,7 @@ const products = [
         date: 2021,
         collection: '',
         price: 2000,
-        image: ['public/images/sandra25.jpg'],
+        image: ['/images/sandra25.jpg'],
         media: 'photography and digital collage print',
         dimensions: '36x36in',
         description: 'An exquisite sculpture to adorn your living space.',
