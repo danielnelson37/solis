@@ -210,12 +210,12 @@ const GalleryItemDetails = () => {
                 autoPlay
                 width="500"
                 controls
-                src={product.image[currentImageIndex]}
+                src={"/solis" + product.image[currentImageIndex]}
               >
                 Your browser does not support the video tag.
               </video>
             ) : (
-              <img src={product.image[currentImageIndex]} alt={product.name} />
+              <img src={"/solis" + product.image[currentImageIndex]} alt={product.name} />
             )}
             
                  {product.image.length > 1 && (
@@ -228,11 +228,11 @@ const GalleryItemDetails = () => {
                 >
                   {image.includes('/videos/') ? (
                     <video >
-                      <source src={image} type="video/mp4" />
+                      <source src={"/solis" + image} type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
                   ) : (
-                    <img src={image} alt={`${product.name} - Thumbnail ${index}`} />
+                    <img src={"/solis" + image} alt={`${product.name} - Thumbnail ${index}`} />
                   )}
                 </div>
               ))}
