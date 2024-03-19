@@ -7,7 +7,8 @@ export default function SiteHeadingAndNav() {
       <nav>
         <a id='logo' href='/solis/'>SOLISPHERE</a>
         <div className="right">
-        <ul>
+        <button className="dropdown-btn">Menu</button>
+          <ul className="main-menu">
             <li><NavLink to='/solis/'>Home</NavLink></li>
             <li><NavLink to='/solis/about'>About</NavLink></li>
             <li><NavLink to='/solis/gallery'>Gallery</NavLink></li>
