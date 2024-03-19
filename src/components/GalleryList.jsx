@@ -277,7 +277,7 @@ const GalleryList = () => {
     // Update URL parameters based on the new sort
   const newParams = new URLSearchParams(window.location.search);
   newParams.set('page', '1');
-  navigate(`/gallery?${newParams.toString()}`);
+  navigate(`?${newParams.toString()}`);
   };
 
   const handleSearchChange = (newSearchTerm) => {
@@ -286,7 +286,7 @@ const GalleryList = () => {
     // Update URL parameter based on the new search term
   const newParams = new URLSearchParams(window.location.search);
   newParams.set('page', '1');
-  navigate(`/gallery?${newParams.toString()}`);
+  navigate(`?${newParams.toString()}`);
   }
   
   
