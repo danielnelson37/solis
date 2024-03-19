@@ -62,7 +62,7 @@ export default function App() {
           <Loading />
         ) : (
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="solis/" element={<Home />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/gallery/:id" element={<GalleryItemDetail />} />

@@ -5,7 +5,7 @@ const products = [
       date: 2022,
       collection: "Black Dog",
       price: 3000,
-      image: ['/images/endscene.jpg'],
+      image: ['images/endscene.jpg'],
       media: 'Graphite and marker on paper, digital collage',
       dimensions: "3x3ft",
       description: 'A piece part of the “Black Dog” series using the motif of the black dog to illustrate the absurdity of the loyalty of suffering in life.',
