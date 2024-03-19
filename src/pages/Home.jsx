@@ -62,10 +62,10 @@ return (
     <p> Welcome to SOLISPHERE, a unique space curated by artist Daniel Nelson. Explore a diverse range of creations, from websites to paintings, embodying existential themes that navigate the dance between absurdism, nihilism, and existentialism. Nelson's work illuminates the transformative journey through darkness, portraying beauty in introspection and embracing the depth of the human experience. </p>
     <div className="home-button-row">
     <button className="home-about-button"> 
-    <Link to="/about" className="home-about-link">Learn More</Link> 
+    <Link to="/solis/about" className="home-about-link">Learn More</Link> 
     </button>
     <button className="explore-gallery-button"> 
-      <Link to='/gallery?page=1' className="explore-gallery-link">Explore Gallery</Link>
+      <Link to='/solis/gallery?page=1' className="explore-gallery-link">Explore Gallery</Link>
     </button>
     
     </div>

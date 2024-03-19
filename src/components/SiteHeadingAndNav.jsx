@@ -5,12 +5,12 @@ export default function SiteHeadingAndNav() {
   return (
     <header>
       <nav>
-        <a id='logo' href='/'>SOLISPHERE</a>
+        <a id='logo' href='/solis/'>SOLISPHERE</a>
         <div className="right">
         <ul>
-            <li><NavLink to='solis/'>Home</NavLink></li>
-            <li><NavLink to='solis/about'>About</NavLink></li>
-            <li><NavLink to='solis/gallery'>Gallery</NavLink></li>
+            <li><NavLink to='/solis/'>Home</NavLink></li>
+            <li><NavLink to='/solis/about'>About</NavLink></li>
+            <li><NavLink to='/solis/gallery'>Gallery</NavLink></li>
           </ul>
         </div>
       </nav>
