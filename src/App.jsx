@@ -63,9 +63,9 @@ export default function App() {
         ) : (
           <Routes>
             <Route path="solis/" element={<Home />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/gallery" element={<GalleryPage />} />
-            <Route path="/gallery/:id" element={<GalleryItemDetail />} />
+            <Route path="solis/about" element={<AboutPage />} />
+            <Route path="solis/gallery" element={<GalleryPage />} />
+            <Route path="solis/gallery/:id" element={<GalleryItemDetail />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         )}

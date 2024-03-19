@@ -175,7 +175,7 @@ const GalleryItemDetails = () => {
   const handleGoBack = () => {
     // const productIndex = products.findIndex((p) => p.id === parseInt(id, 10));
     // const targetPage = Math.ceil((productIndex + 1) / itemsPerPage);
-    navigate(`/gallery?page=${page}`);
+    navigate(`/solis/gallery?page=${page}`);
     console.log("pageNumber from galleryitem:", page); 
     // console.log("targetPage:", targetPage);
   };

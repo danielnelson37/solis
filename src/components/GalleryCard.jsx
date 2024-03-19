@@ -62,7 +62,7 @@ const GalleryCard = ({ product, currentPage }) => {
 
     return (
     <div className="gallery-card">
-    <Link to={`/gallery/${product.id}?page=${currentPage}`}>
+    <Link to={`${product.id}?page=${currentPage}`}>
     {hasVideo ? (
           <video className="gallery-video" autoPlay width="auto" loop muted={!isHovered} onMouseOver={handleHover} onMouseLeave={handleMouseLeave}>
             <source src={product.image[0]} type="video/mp4" />

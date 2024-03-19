@@ -260,7 +260,7 @@ const GalleryList = () => {
     setCurrentPage(pageNumber); 
     const newParams = new URLSearchParams(window.location.search);
     newParams.set('page', pageNumber);
-    navigate(`/gallery?${newParams.toString()}`);
+    navigate(`?${newParams.toString()}`);
 
   };
 
@@ -268,7 +268,7 @@ const GalleryList = () => {
     setCurrentPage(1);
     const newParams = new URLSearchParams(window.location.search);
     newParams.set('page', '1');
-    navigate(`/gallery?${newParams.toString()}`);
+    navigate(`?${newParams.toString()}`);
     
   };
 

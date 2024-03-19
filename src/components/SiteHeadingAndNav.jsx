@@ -8,9 +8,9 @@ export default function SiteHeadingAndNav() {
         <a id='logo' href='/'>SOLISPHERE</a>
         <div className="right">
         <ul>
-            <li><NavLink to='/'>Home</NavLink></li>
-            <li><NavLink to='/about'>About</NavLink></li>
-            <li><NavLink to='/gallery'>Gallery</NavLink></li>
+            <li><NavLink to='solis/'>Home</NavLink></li>
+            <li><NavLink to='solis/about'>About</NavLink></li>
+            <li><NavLink to='solis/gallery'>Gallery</NavLink></li>
           </ul>
         </div>
       </nav>
