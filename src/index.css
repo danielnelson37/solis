@@ -2290,6 +2290,7 @@ margin-bottom: 2%;
   .detailed-bio {
     max-width: 100%;
     display: flex;
+    margin-bottom: 2vh;
     flex-direction: column;
   }
   
@@ -2309,7 +2310,7 @@ margin-bottom: 2%;
   
   .detailed-bio p {
     margin-top: 0;
-    font-size: 1vh;
+    font-size: 1.5vh;
     text-align: center;
     padding: 0 1vh;
     padding-bottom: 2vh;
@@ -2338,41 +2339,44 @@ margin-bottom: 2%;
   
   /* About Page css*/
   .about-header{
-    max-width: 95%;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0;
   }
   
   .about-header h1{
-    font-size: 3em;
-    width: 50%;
+    font-size: 3.5vh;
+    width: 60%;
     color: white;
-    margin-right: 5%;
-    margin-left: -8%;
+    margin-right: 2%;
     background-color: black;
     padding: 2%;
-    padding-left: 8%;
-    border-radius: 60px;
+    padding-left: 2.5vh;
+    padding-right: 3vh;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
     
   }
   
   .about-caption {
-    margin-right: -20%;
+    margin-right: 0%;
     border: 2px solid white;
-    border-radius: 60px;
+    border-radius: 500px;
+  
   }
   
   .about-header p{
-    font-size:.8em;
+    font-size:.5vh;
     color: white;
-    margin-right:27% !important;
-    padding: 2%;
-    padding-left: 5%;
+    margin-right: 0% !important;
+    padding: 20% 25%;
+   
   }
   
   
   .about-row-1{
     display: flex;
     max-width: 100%;
+    
   }
   
   .introduction {
@@ -2383,7 +2387,7 @@ margin-bottom: 2%;
   }
   
   .introduction h2{
-    font-size: 45px;
+    font-size: 3vh;
     max-width: 100%;
     position: absolute;
     top: 4%;
@@ -2397,19 +2401,20 @@ margin-bottom: 2%;
   
   .introduction img {
     width: 100%;
-    height: 780px;
+    height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
   }
   
   .introduction p {
     position: absolute;
-    width: 70%;
-    top: 43%;
+    width: 80%;
+    font-size: 1.5vh;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    padding: 5% 2%;
+    padding: 5% 5%;
     background: rgba(255, 255, 255, 0.019);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
@@ -2417,7 +2422,6 @@ margin-bottom: 2%;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 8px;
     color: white;
-    font-size: 1.3rem;
     text-align: center;
     transition: opacity 0.3s ease-in-out; 
   }
@@ -2430,45 +2434,49 @@ margin-bottom: 2%;
     display: flex;
     flex-direction: column;
     max-width: 50%;
-    padding-right: 5%;
+    padding-right: 2vh;
     padding-left: 4%;
     border-top: 2px white solid;
     border-bottom: 2px white solid;
+
   }
   
   .artistic-philosophy h2{
-    font-size: 30px;
+    font-size: 3vh;
     margin: 0;
+    text-align: center;
   }
   
   .artistic-philosophy p{
-    font-size: 17px;
+    font-size: 1vh;
   }
   
   .skills-container {
     display: flex;
     flex-direction: row-reverse;
     width: 100%; 
+    padding-bottom: 2%;
   }
   
   .skills-header{
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
-    padding: 2% ;
+    padding: 2%;
     writing-mode: vertical-lr; 
     color: white; 
     background-color: black;
     border-radius: 30px;
+
   }
   
   .skills-header h2 {
-    font-size: 30px;
+    font-size: 3vh;
     margin: 0
   }
   
   .skills-header p{
-    font-size: 1em;
+    font-size: 1vh;
     margin: 0;
     color:#F05941;
   }
@@ -2477,6 +2485,7 @@ margin-bottom: 2%;
     display: flex;
     max-width: 100%;
     align-content: center;
+    margin-right: 1vh;
   }
   
   .skill-category {
@@ -2489,11 +2498,12 @@ margin-bottom: 2%;
   
   .skill-category p {
     width: auto 10%;
-    font-size: 16px;
+    font-size: 1vh;
     margin: .5%;
     background-color: black;
     color: white;
-    padding: 2%;
+    text-align: center;
+    padding:  2% 3%;
     border-radius: 8px;
   }
   
@@ -2526,12 +2536,11 @@ margin-bottom: 2%;
     max-width: 100%;
     margin: auto;
     margin-bottom: 2%;
-    padding-right: 2%;
     border-radius: 1px;
   }
   
   .about-row-2 h2 {
-    font-size: 30px;
+    font-size: 3vh;
     margin: 0;
   }
   
@@ -2543,13 +2552,13 @@ margin-bottom: 2%;
   }
   
   .beyond-column p{
-    font-size: 18px;
+    font-size: 1vh;
   }
   
   .beyond-the-canvas-image-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     max-height: 100%;
   }
   
@@ -2557,19 +2566,18 @@ margin-bottom: 2%;
     display: flex;
     max-width: 100%;
     justify-items: center;
-    margin-left: 2%;
   }
   
   .image-with-description {
     position: relative;
-    max-width: 50%;
+    max-width: 50%; /* Adjust as needed */
     margin-right: .5%;
     margin-left: .5%;
   }
   
   .image-with-description img {
     max-width: 100%;
-    height: 500px;
+    height: 200px;
     border-radius: 8px;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
@@ -2577,7 +2585,7 @@ margin-bottom: 2%;
   
   .image-with-description p {
     position: absolute;
-    width: 95%;
+    width: 90%;
     top: 46%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -2590,7 +2598,7 @@ margin-bottom: 2%;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 8px;
     color: white;
-    font-size: 1rem;
+    font-size: .9vh;
     text-align: center;
     transition: opacity 0.3s ease-in-out;
   }
@@ -2599,9 +2607,6 @@ margin-bottom: 2%;
     color: black !important;
   }
   
-  .image-text-3{
-    color: #F05941 !important;
-  }
   
   .image-with-description:hover p {
     opacity: 1;
@@ -2609,148 +2614,144 @@ margin-bottom: 2%;
   
   .about-row-3 {
     border-top: 2px white solid;
-    max-width: 100%;
-    border-bottom: 2px white solid;
-    margin-bottom: 2%;
+    padding: 0 ;
   }
   
+  
   .upcoming-projects{
-    display: flex;
     max-width: 100%;
-    margin: 2% 1%;
-    align-items: center;
+    margin: auto;
+    padding: 2% 0;
   }
   
   .upcoming-projects p {
-    font-size: 18px;
-  }
-  
-  .upcoming-projects-text-section{
-    max-width: 100%;
-    margin: 0 2%;
-    max-height: 500px;
-    writing-mode: vertical-rl; 
-    transform: rotate(-180deg);
-    background-color: black;
-    border-radius: 30px;
-    padding: 3.5% 0%;
+    font-size: 1vh;
   }
   
   .upcoming-projects-text-section h2{
-    color: white; 
-    font-size: 2em;
-     
+    font-size: 3vh;
+    margin: 0%;
   }
   
-  .upcoming-projects-text-section p{
-    font-size: 1em;
-    color: #F05941; 
-    text-align: center;
+  .chrome-text{
+    max-width: 100%;
   }
-  
-  .upcoming-projects .image-with-description video{
-    width: 100%;
-    height:auto;
-    margin: auto 0;
-    margin-right: 5%;
-    border-radius: 40px;
-    overflow: hidden;
-  }
-  
-  .chrome-text p{
-    max-width: 90%;
-    margin: 4% auto;
-    padding: 10% 2%;
-  }
+
   
   .chrome-text p,
   .tattoo-text p{
-    font-size: 18px;
+    font-size: 1vh;
   }
   
-  .tattoo-text p{
-    color: black;
-    padding: 10% 2%;
-    width: 75%;
+  .chrome-mini-gallery{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 500px;
   }
+  
+  .image-with-description video{
+    display: flex;
+    width: 100%;
+    padding: 1%;
+    background-color: black !important;
+    height: 200px !important;
+    border-radius: 10px !important;
+  }
+  
+  .tattoo-container{
+    width: 100%;
+    }
   
   .tattoo-mini-gallery{
     display: flex;
-    width: 100%;
-   
+    max-width: 100%;
+    height: 100% !important;
+    margin: 0 auto;
   }
   
   .image-column-1{
     display: flex;
-    width: 110%; 
+    width: 50%;
+    height: 100%;
+    margin: auto 0;
   }
   
   .image-column-2{
     display: flex;
     flex-direction: column;
-    width: 88%;
-    margin-right: 5%;
-    
+    height: 100%;
+
+    width: 50%;
+    margin-left:1%;
   }
   
-  .tattoo-text{
-    max-width: 37%;
-    margin: auto 2%;
-    padding-right: 1%;
-    
+  .tattoo-text {
+    max-width: 100%;
+    padding: 2% 0;
+  }
+  
+  .tattoo-text p{
+    color: black;
   }
   
   
   .tattoo-mini-gallery img {
+    max-width: 100%;
     width: 250px;
-    height: auto;
+    height: 100%;
     object-fit: contain;
     border-radius: 10px;
-    margin: 10px;
+   
   }
   
   .contact-container{
+    max-width: 55%;
+    margin: 0 auto;
+    margin-bottom: 5%;
     display: flex;
-    max-width: 100%;
-    margin: 0 2.5%;
+    padding: 1% 20%;
+    padding-top: 2%;
+    flex-direction: column-reverse;
     background-color: black;
-    border-radius: 10px;
-  }
-  
-  .contact-information-container a:hover{
-    color:#F05941;
   }
   
   .contact-container h2{
-    font-size: 30px;
-    margin: 1%;
+    font-size: 3vh;
   }
   
   .contact-information-container{
+    max-width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: auto;
-    padding-right: 10%;
-    max-width: 100%;
     text-align: center;
     color: white;
+  }
+  
+  .contact-information-container h2{
+    margin: 1% 0;;
+  }
+
+  .contact-information-container p{
+    font-size: 1.5vh;
   }
   
   .contact-information-container a{
     text-decoration: none;
     color: white;
+    font-size: 1.5vh;
   }
   
-  .contact-img{
-    max-width: 100%;
-    margin: 0 10%;
+  .contact-img {
+    display: flex;
   }
+  
   .contact-img video{
     max-width: 100%;
-    height: 600px;
-    border-radius: 10px;
+    height: auto;
   }
-  
   /*  Search & filter css*/
   .filter-search-row{
     display: flex;
@@ -3173,6 +3174,10 @@ margin-bottom: 2%;
     align-items: center;
     width: 100%; 
     transition: transform 0.3s ease-in-out;
+  }
+
+  .navigation-links ul li{
+    margin: 1vh 0;
   }
   
   .navigation-links li:hover{
