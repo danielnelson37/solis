@@ -1,10 +1,12 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSort } from '@fortawesome/free-solid-svg-icons'; 
 
 const SortSection = ({ sortOptions, sortBy, setSortBy, showSort, setShowSort, handleSortChange }) => {
   return (
     <div className="sort-section">
       <button className="sort-button" onClick={() => setShowSort(!showSort)}>
-        Sort
+      <FontAwesomeIcon icon={faSort} size="2x" />
       </button>
 
       {showSort && (

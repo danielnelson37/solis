@@ -97,7 +97,7 @@ nav .right {
 }
 
 button {
-  background-color: #1b1b1b;
+  background-color: black;
   color: #ffffff;
   padding: 10px 20px;
   border: none;
@@ -753,10 +753,12 @@ video::-webkit-media-controls-play-button {
 .gallery-search{
   display: flex;
   align-items: center;
-  width: 80%;
+  width: 100%;
 }
 
 .gallery-title {
+  display:flex;
+  align-items: center;
   font-size: 3em;
   height: 70px;
   color: white;
@@ -769,11 +771,11 @@ video::-webkit-media-controls-play-button {
 
 .search-bar{
   width: 80%;
-  margin-right: 5%;
+  margin-right: 2%;
 }
 
 .search-bar-input{
-  width: 100%;
+  width: 95%;
   height: 70px;
   background: white;
   border-top-right-radius: 40px;
@@ -785,11 +787,25 @@ video::-webkit-media-controls-play-button {
   
 }
 
+.filter-and-sort-row{
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  justify-content: center;
+}
+
+.filter-section{
+  max-width: 50%;
+  margin-right: 5%;
+}
+
+.sort-section{
+  max-width: 50%;
+}
+
 .filter-button {
-  background-color: #1b1b1b;
+  background-color: black;
   color: #ffffff;
-  padding: 15px 25px;
-  font-size: 18px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -804,15 +820,12 @@ video::-webkit-media-controls-play-button {
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3); 
-
 }
 
 .sort-button {
-  margin-left: 10%;
-  font-size: 18px;
-  background-color: #1b1b1b;
+  margin-left: 5%;
+  background-color: black;
   color: #ffffff;
-  padding: 15px 25px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -842,7 +855,7 @@ select {
 }
 
 .gallery-list {
-  width: 96%;
+  width: 95%;
   margin: 2% auto;
   columns: 3;
   column-gap: 1%;
@@ -854,15 +867,14 @@ select {
   margin-bottom: 2%;
 }
 
-
 .gallery-image,
 .gallery-video {
   max-width: 100%;
   border-radius: 8px;
 }
 
-.gallery-card a {
-  text-decoration: none;
+.gallery-image:hover{
+  border:2px #F05941 solid;
 }
 
 .pagination {
@@ -2050,7 +2062,7 @@ margin-bottom: 2%;
   .featured-art-content .mini-gallery{
     width: 100%;
     display: flex;
-    margin: 0% 3vh;
+    margin: 2% 3vh;
     align-items: center;
     justify-content: center;
   }
@@ -2066,7 +2078,7 @@ margin-bottom: 2%;
     position: absolute;
    display: flex;
    justify-content: center;
-   width: 105%;
+   width: 103%;
   }
   
   .featured-art-icon-row .prev,
@@ -2637,8 +2649,8 @@ margin-bottom: 2%;
 .filter-and-sort-row{
   display: flex;
   width: 100%;
-  justify-content: center;
-  margin-left: 5%;
+  justify-content: end;
+  margin-right: 5%;
 }
 
 .filter-section{
@@ -3616,7 +3628,8 @@ margin-bottom: 2%;
     margin-bottom: 1vh;
   }
   
-  .image-with-description img,  .image-with-description-v1 img {
+  .image-with-description img, 
+  .image-with-description-v1 img {
     max-width: 100%;
     height: 200px;
     border-radius: 8px;
@@ -3647,7 +3660,6 @@ margin-bottom: 2%;
   }
 
 
-  
   .image-text-2{
     color: black !important;
   }

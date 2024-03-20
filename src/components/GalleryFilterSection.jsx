@@ -1,10 +1,12 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilter } from '@fortawesome/free-solid-svg-icons'; 
 
 const GalleryFilterSection = ({ filters, setFilters, showFilters, setShowFilters, handleFilterChange  }) => {
     return (
         <div className="filter-section">
             <button className="filter-button" onClick={() => setShowFilters(!showFilters)}>
-                Filter
+            <FontAwesomeIcon icon={faFilter} size="2x" />
             </button>
        
 
