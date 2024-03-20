@@ -2320,7 +2320,7 @@ margin-bottom: 2%;
     transform: translate(-50%, -50%);
     color: #fff; /* Adjust the text color */
     font-size: 1vh; /* Adjust the font size */
-    width: 85%; /* Adjust the width as needed */
+    width: 75%; /* Adjust the width as needed */
   }
   
   
@@ -2338,7 +2338,7 @@ margin-bottom: 2%;
   }
   
   .introduction h2{
-    font-size: 6vh;
+    font-size: 3.5vh;
     max-width: 100%;
     position: absolute;
     top: 4%;
@@ -2447,7 +2447,7 @@ margin-bottom: 2%;
   
   .skill-category p {
     width: auto 10%;
-    font-size: 1.7vh;
+    font-size: 2.4vh;
     margin: .5%;
     background-color: black;
     color: white;
@@ -2591,6 +2591,7 @@ margin-bottom: 2%;
 
   .upcoming-projects-text-section{
     padding: 25% 1%;
+    text-align:center;
   }
   
   .upcoming-projects-column-2{
@@ -2602,6 +2603,7 @@ margin-bottom: 2%;
 
   .upcoming-projects p {
     font-size: 1.7vh;
+    text-align:center;
   }
   
   .upcoming-projects-text-section h2{
@@ -2867,7 +2869,7 @@ margin-bottom: 2%;
   .gallery-card {
     position: relative;
     display: flex;
-    max-width: calc(40% - 5px); 
+    max-width: calc(20vh); 
     max-height: auto;
     background-color: #1b1b1b;
     border: 1px solid #ddd; 
@@ -2880,9 +2882,9 @@ margin-bottom: 2%;
   }
   
   .gallery-card:hover {
-     transform: scale(1);
+     
      max-height: auto;
-    max-width: 50%; 
+    max-width: 25vh; 
   }
   
   .gallery-video {
@@ -2911,9 +2913,8 @@ margin-bottom: 2%;
   
   .gallery-card:hover .gallery-image {
    max-width:auto;
-   max-height:100%;
    height: auto;
-   object-fit: contain;
+   object-fit: cover;
   
   }
   
