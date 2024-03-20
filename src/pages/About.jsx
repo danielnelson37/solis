@@ -114,8 +114,8 @@ const [loading, setLoading] = useState(true);
         </p>
         </div>
         <div className="image-with-description-v1">
-        <img src="/solis/images/metvoyager.jpg" alt="desc"/>
-        <p className="image-text-4">  METVoyager is a web platform I developed that leverages the MET API to deliver artwork recommendations based on search functionality or by selecting specific categories to generate art that matches. The platform also allows users to save and revisit favorite artworks in their own personal gallery.</p>
+        <img src="/solis/images/metvoyager.jpg" alt="desc" className="metvid" />
+        <p className="image-text-4">METVoyager is a web platform I developed that leverages the MET API to deliver artwork recommendations based on search functionality or by selecting specific categories to generate art that matches. The platform also allows users to save and revisit favorite artworks in their own personal gallery.</p>
         </div>
         </div>
        
