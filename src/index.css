@@ -889,7 +889,7 @@ select {
   font-size: 3em;
   margin: 0;
   padding: 0;
-  color:#1b1b1b;
+  color: black;
 }
 
 
@@ -921,7 +921,7 @@ select {
   padding: 1%; 
   padding-bottom: 3%;
   border-radius: 30px;
-  background-color:#1b1b1b ;
+  background-color: black;
 }
 
 .gallery-nav{
@@ -1686,7 +1686,7 @@ select {
   padding: 1%; 
   padding-bottom: 3%;
   border-radius: 30px;
-  background-color:#1b1b1b ;
+  background-color: black ;
 }
 
 .gallery-nav{
@@ -1920,7 +1920,7 @@ margin-bottom: 2%;
 .dropdown-btn {
   display: block;
     padding: 10px;
-    background-color: #1b1b1b;
+    background-color: black;
     color: #fff; /* Text color */
     cursor: pointer;
     border: none; /* Remove default button border */
@@ -1953,7 +1953,7 @@ margin-bottom: 2%;
 
   
   button {
-    background-color: #1b1b1b;
+    background-color: black;
     color: #ffffff;
     padding: 10px 20px;
     border: none;
@@ -2664,7 +2664,7 @@ margin-bottom: 2%;
   .filter-button {
     max-width: 100%;
     margin-right: 5%;
-    background-color: #1b1b1b;
+    background-color: black;
     color: #ffffff;
     font-size: 2vh;
     border: none;
@@ -2689,7 +2689,7 @@ margin-bottom: 2%;
     max-width: 100%;
     margin-left: 0;
     font-size: 2vh;
-    background-color: #1b1b1b;
+    background-color: black;
     color: #ffffff;
     border: none;
     border-radius: 8px;
@@ -2757,7 +2757,7 @@ margin-bottom: 2%;
     font-size: 5vh;
     margin: 0;
     padding: 0;
-    color:#1b1b1b;
+    color:black;
   }
   
   
@@ -2789,7 +2789,7 @@ margin-bottom: 2%;
     padding: 1%; 
     padding-bottom: 3%;
     border-radius: 30px;
-    background-color:#1b1b1b ;
+    background-color:black ;
   }
   
   .gallery-nav{
@@ -2926,7 +2926,7 @@ margin-bottom: 2%;
     max-width: 100%;
     align-content: center;
     margin-top: 3%;
-    background-color: #1b1b1b; 
+    background-color: black; 
     color: white; 
   }
   
@@ -3147,7 +3147,7 @@ margin-bottom: 2%;
 .dropdown-btn {
   display: block;
     padding: 10px;
-    background-color: #1b1b1b;
+    background-color: black;
     color: #fff; /* Text color */
     cursor: pointer;
     border: none; /* Remove default button border */
@@ -3180,7 +3180,7 @@ margin-bottom: 2%;
 
   
   button {
-    background-color: #1b1b1b;
+    background-color: black;
     color: #ffffff;
     padding: 10px 20px;
     border: none;
@@ -3985,7 +3985,7 @@ margin-bottom: 2%;
     font-size: 5vh;
     margin: 0;
     padding: 0;
-    color:#1b1b1b;
+    color: black;
   }
   
   
@@ -4017,7 +4017,7 @@ margin-bottom: 2%;
     padding: 1%; 
     padding-bottom: 3%;
     border-radius: 30px;
-    background-color:#1b1b1b ;
+    background-color: black ;
   }
   
   .gallery-nav{
@@ -4155,7 +4155,7 @@ margin-bottom: 2%;
     max-width: 100%;
     align-content: center;
     margin-top: 3%;
-    background-color: #1b1b1b; 
+    background-color: black; 
     color: white; 
   }
   
