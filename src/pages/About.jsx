@@ -26,7 +26,7 @@ const [loading, setLoading] = useState(true);
       <header className="about-header">
         <h1>ABOUT SOLISPHERE</h1>
         <section className="about-caption">
-        <p>Curated by artist Daniel Nelson. SOLISPHERE is more than a gallery; it's a curated space that transcends artistic boundaries. It's a digital sanctuary and a source of light for individuals seeking a fresh start and meaningful connections through art and technology.</p>
+        <p>SOLISPHERE is more than a gallery; it's a curated space that transcends artistic boundaries. It's a digital sanctuary and a source of light for individuals seeking a fresh start and meaningful connections through art and technology.</p>
         </section>
       </header>
 
@@ -94,24 +94,28 @@ const [loading, setLoading] = useState(true);
         <p>This commitment stems from a deep-seated belief in the potential of technology to strengthen personal journeys and foster growth within each individual. Software, in its essence, becomes a guiding light, offering solutions that navigate the complexities of existence. It is an unwavering pursuit to peer into the darkness, understanding problems at their core, and crafting solutions that resonate with the human experience. In each line of code and every project undertaken, the goal remains clear - to contribute meaningfully to the betterment of society, providing tools that empower individuals to navigate their paths with courage, resilience, and a renewed sense of purpose. This vision, harmonizing with the overarching themes of SOLISPHERE, envisions a future where technology becomes a transformative force, shedding light on the darkest corners of our collective journey.</p>
         </div>
         <div className='image-with-description-container'>
-        <div className="image-with-description">
+        <div className="image-with-description-v1">
         <a href="https://second-wind-udn3.onrender.com/landing" target="_blank">
         <img src="/solis/images/secondwind.jpg" alt="desc"/>
         <p>
-        Second Wind, a full stack online community-based platform that provide resources, support, and employment for those impacted by the criminal justice system. As a project manager and backend engineer for Second Wind, I orchestrated a space that provides resources, support, and employment for those impacted by the criminal justice system. I leveraged Express, Node,js, SQL, Postgres, Postman, Knex.js to develop models, controllers, and routes for all tables in the database to enable seamless CRUD functionality for all requests in the database.        </p>
+        Second Wind, a full stack online community-based platform that provide resources, support, and employment for those impacted by the criminal justice system.   </p>
         </a>
         </div>
-        <div className="image-with-description">
+        <div className="image-with-description-v1">
         <a href="https://careerassess.mysites.io/?page_id=2" target="_blank">
         <img src="/solis/images/careerspring.jpg" alt="desc"/>
-        <p className="image-text-2">As a Developer Contractor, I’ve been instrumental in developing software like CareerSpring’s Career Interest Profiler by leveraging JavaScript, HTML & CSS. This custom career assessment tool seamlessly integrated into WordPress serves as a beacon for individuals exploring their professional paths. Through meticulous design, wireframing, and technical implementation, I created a tool that not only enhances user experience but aligns with long-term organizational goals. This tool, part of CareerSpring, serves as a beacon, guiding individuals towards careers that align with their interests.
+        <p className="image-text-2">As a Developer Contractor, I’ve been instrumental in developing software like CareerSpring’s Career Interest Profiler by leveraging JavaScript, HTML & CSS. This custom career assessment tool seamlessly integrated into WordPress serves as a beacon for individuals exploring their professional paths. 
         </p>
         </a>
         </div>
-        <div className="image-with-description">
+        <div className="image-with-description-v1">
         <img src="/solis/images/SAP.JPG" alt="desc"/>
         <p className="image-text-3">  Crafted during my sophomore year at Parsons School of Design, SAP (FORTHESOUL), 2021, represents a convergence of 3D modeling with AutoCAD, incorporating components such as a PIR motion sensor, DFPlayer, SD card, jumper wires, and Arduino Uno. Within the intricate model, the sculpture delivers a spoken narrative drawn from a fusion of written words by Jean-Paul Sartre, Albert Camus, and my own alterations through text-to-speech software.
-         It's a deep exploration of the absurd, individualism, and the transformative potential embedded in personal journeys.</p>
+        </p>
+        </div>
+        <div className="image-with-description-v1">
+        <img src="/solis/images/metvoyager.jpg" alt="desc"/>
+        <p className="image-text-4">  METVoyager is a web platform I developed that leverages the MET API to deliver artwork recommendations based on search functionality or by selecting specific categories to generate art that matches. The platform also allows users to save and revisit favorite artworks in their own personal gallery.</p>
         </div>
         </div>
        
@@ -125,16 +129,18 @@ const [loading, setLoading] = useState(true);
         <h2>Upcoming Projects</h2>
         <p>*Not limited to the showcased</p>
         </div>
-        <div className="image-with-description">
+        <div className="upcoming-projects-column-2">
+        <div className="image-with-description" id="chrome-container" >
       <video autoPlay muted width="auto" loop >
             <source src='/solis/videos/heartinchrome.mp4' type="video/mp4" />
             Your browser does not support the video tag.
           </video>
       <div className='chrome-text'>
-      <p>A cyberpunk odyssey unfolds in "Heart in Chrome," a graphic novel currently in the throes of creation. Set against the backdrop of Neo York 2063, the narrative follows artist Luke Kane's journey for redemption as his acclaimed masterpieces are pilfered by rogue agents under the orchestrations of CEO Viktor Blackwood. In this high-stakes cyberpunk thriller, the lines blur between ally and adversary, exploring the sinister nexus of art, identity, and power.</p>
+      <p>A cyberpunk odyssey unfolds in "Heart in Chrome," a graphic novel currently in the throes of creation exploring the sinister nexus of art, identity, and power.</p>
       </div>
     </div>
-    <div className="image-with-description">
+    
+    <div className="image-with-description" id="tats">
     <div className="tattoo-text">
     <p>Beyond the realms of traditional art, I'm venturing into the world of tattooing, specializing in traditional black and grey styles. As my journey unfolds, I aspire to master diverse areas, including color realism and more. This new chapter adds another layer to my creative odyssey, exploring different ways to connect art with personal experiences and cultural influences.</p>
     </div>
@@ -146,6 +152,7 @@ const [loading, setLoading] = useState(true);
       <img src = {`/solis/images/${tattooImages[4]}`} alt= {"tat-4"} />
       <img src = {`/solis/images/${tattooImages[3]}`} alt= {"tat-3"} />
       </div>  
+    </div>
     </div>
     </div>
       </section>

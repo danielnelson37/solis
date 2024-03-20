@@ -2004,7 +2004,7 @@ margin-bottom: 2%;
 
 
 /*mobile website*/
-@media only screen and (min-width: 320px) and (max-width: 748px) {
+@media only screen and (min-width: 320px) and (max-width: 500px) {
   /* Mobile-specific styles */
   body {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -2017,6 +2017,7 @@ margin-bottom: 2%;
     background-blend-mode:screen;
     background-size: 100%;  
     background-color:rgb(105, 105, 105);
+    width: 100%;
   }
   
   input, label {
@@ -2345,7 +2346,7 @@ margin-bottom: 2%;
   
   .about-header h1{
     font-size: 3.5vh;
-    width: 60%;
+    width: 100%;
     color: white;
     margin-right: 2%;
     background-color: black;
@@ -2354,29 +2355,41 @@ margin-bottom: 2%;
     padding-right: 3vh;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
-    
   }
-  
+
   .about-caption {
-    margin-right: 0%;
-    border: 2px solid white;
-    border-radius: 500px;
-  
+    position: relative;
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container */
+    text-align: center;
+    border:none;
   }
   
-  .about-header p{
-    font-size:.5vh;
-    color: white;
-    margin-right: 0% !important;
-    padding: 20% 25%;
-   
+  .about-caption:before {
+    content: '';
+    display: block;
+    width: 105%; /* Same width as the container */
+    padding-top: 105%; /* Maintain a 1:1 aspect ratio */
+    border-radius: 50%; /* Create a circle */
+    border: 2px white solid; /* Adjust the color as needed */
+    margin: 0 auto; /* Center the circle */
+  }
+  
+  .about-caption p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Adjust the text color */
+    font-size: .8vh; /* Adjust the font size */
+    width: 90%; /* Adjust the width as needed */
   }
   
   
   .about-row-1{
     display: flex;
+    flex-direction: column;
     max-width: 100%;
-    
   }
   
   .introduction {
@@ -2391,13 +2404,12 @@ margin-bottom: 2%;
     max-width: 100%;
     position: absolute;
     top: 4%;
-    left:4%;
+    left: 4%;
     writing-mode: vertical-lr; /* Rotate text vertically from left to right */
     transform: rotate(-180deg); /* Additional rotation for browser compatibility */
     margin: auto;
     color: white; /* Adjust the color as needed */
   }
-  
   
   .introduction img {
     width: 100%;
@@ -2409,7 +2421,7 @@ margin-bottom: 2%;
   .introduction p {
     position: absolute;
     width: 80%;
-    font-size: 1.5vh;
+    font-size: 2vh;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -2433,9 +2445,8 @@ margin-bottom: 2%;
   .philosophy-inspiration-container{
     display: flex;
     flex-direction: column;
-    max-width: 50%;
-    padding-right: 2vh;
-    padding-left: 4%;
+    max-width: 100%;
+    padding: 0 2vh;
     border-top: 2px white solid;
     border-bottom: 2px white solid;
 
@@ -2444,17 +2455,17 @@ margin-bottom: 2%;
   .artistic-philosophy h2{
     font-size: 3vh;
     margin: 0;
-    text-align: center;
+    text-align: left;
   }
   
   .artistic-philosophy p{
-    font-size: 1vh;
+    font-size: 1.5vh;
   }
   
   .skills-container {
     display: flex;
     flex-direction: row-reverse;
-    width: 100%; 
+    max-width: 100%; 
     padding-bottom: 2%;
   }
   
@@ -2467,11 +2478,11 @@ margin-bottom: 2%;
     color: white; 
     background-color: black;
     border-radius: 30px;
-
   }
   
   .skills-header h2 {
     font-size: 3vh;
+    text-align: center;
     margin: 0
   }
   
@@ -2498,7 +2509,7 @@ margin-bottom: 2%;
   
   .skill-category p {
     width: auto 10%;
-    font-size: 1vh;
+    font-size: 1.3vh;
     margin: .5%;
     background-color: black;
     color: white;
@@ -2552,7 +2563,7 @@ margin-bottom: 2%;
   }
   
   .beyond-column p{
-    font-size: 1vh;
+    font-size: 1.5vh;
   }
   
   .beyond-the-canvas-image-container {
@@ -2564,18 +2575,27 @@ margin-bottom: 2%;
   
   .image-with-description-container{
     display: flex;
-    max-width: 100%;
-    justify-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   
+  
+  .image-with-description-v1 {
+    position: relative;
+    width: calc(50% - 10px); 
+    margin: .5vh;
+  }
+
   .image-with-description {
     position: relative;
-    max-width: 50%; /* Adjust as needed */
-    margin-right: .5%;
+    width: 100%; 
+    margin-right: 1vh;
     margin-left: .5%;
+    margin-bottom: 1vh;
   }
   
-  .image-with-description img {
+  .image-with-description img,  .image-with-description-v1 img {
     max-width: 100%;
     height: 200px;
     border-radius: 8px;
@@ -2583,7 +2603,8 @@ margin-bottom: 2%;
     transition: transform 0.3s ease-in-out;
   }
   
-  .image-with-description p {
+  .image-with-description p,
+  .image-with-description-v1 p {
     position: absolute;
     width: 90%;
     top: 46%;
@@ -2598,17 +2619,21 @@ margin-bottom: 2%;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 8px;
     color: white;
-    font-size: .9vh;
+    font-size: 1.4vh;
     text-align: center;
     transition: opacity 0.3s ease-in-out;
+    z-index: 1;
   }
+
+
   
   .image-text-2{
     color: black !important;
   }
   
   
-  .image-with-description:hover p {
+  .image-with-description:hover p,
+  .image-with-description-v1:hover p{
     opacity: 1;
   }
   
@@ -2622,57 +2647,68 @@ margin-bottom: 2%;
     max-width: 100%;
     margin: auto;
     padding: 2% 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .upcoming-projects-text-section{
+    padding: 25% 1%;
   }
   
+  .upcoming-projects-column-2{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 100%;
+  }
+
   .upcoming-projects p {
-    font-size: 1vh;
+    font-size: 1.2vh;
   }
   
   .upcoming-projects-text-section h2{
     font-size: 3vh;
     margin: 0%;
   }
+
+  #chrome-container{
+    max-width: 95% ;
+    height: 100% ;
+  }
   
   .chrome-text{
-    max-width: 100%;
+    width: 100%;
   }
 
   
   .chrome-text p,
   .tattoo-text p{
-    font-size: 1vh;
+    font-size: 1.2vh;
   }
   
-  .chrome-mini-gallery{
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    height: 500px;
-  }
   
-  .image-with-description video{
-    display: flex;
+  .upcoming-projects .image-with-description video{
     width: 100%;
+    height:100%;
     padding: 1%;
     background-color: black !important;
-    height: 200px !important;
     border-radius: 10px !important;
   }
-  
+
   .tattoo-container{
-    width: 100%;
-    }
+    max-width: 100%;
+    height: 100%;
+  }
   
   .tattoo-mini-gallery{
     display: flex;
     max-width: 100%;
-    height: 100% !important;
-    margin: 0 auto;
+    margin: 0;
   }
   
   .image-column-1{
     display: flex;
-    width: 50%;
+    width: 100%;
     height: 100%;
     margin: auto 0;
   }
@@ -2681,9 +2717,12 @@ margin-bottom: 2%;
     display: flex;
     flex-direction: column;
     height: 100%;
-
-    width: 50%;
+    width: 100%;
     margin-left:1%;
+  }
+
+  #tats{
+    max-width: 96%;
   }
   
   .tattoo-text {
@@ -2755,52 +2794,73 @@ margin-bottom: 2%;
   /*  Search & filter css*/
   .filter-search-row{
     display: flex;
+    flex-direction: column;
     max-width: 100%;
-    align-items: center;
+    align-content: center;
     border-bottom: 2px solid white;
-    padding-right: 2%;
+    padding-right: 0%;
+    padding-bottom: 2%;
   }
   
   .gallery-search{
     display: flex;
-    align-items: center;
-    width: 80%;
+    align-content: center;
+    width: 100%;
+    
   }
   
   .gallery-title {
-    font-size: 3em;
-    height: 70px;
+    display:flex;
+    align-items: center;
+    font-size: 3vh;
+    height: 30px;
     color: white;
     background-color: black;
     color: white;
     background-color: black;
-    padding-left: 4%;
-    padding-right: 2%;
+    padding: 2%;
+    margin: 1vh 0;
   }
   
   .search-bar{
-    width: 80%;
+    width: 100%;
     margin-right: 5%;
   }
   
   .search-bar-input{
     width: 100%;
-    height: 70px;
+    height: 34.5px;
     background: white;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
     border: none;
-    font-size: 1.5em;
+    font-size: 1.5vh;
     margin: auto 0;
-    padding: 0 2%;
+    padding: 2%;
     
   }
   
+.filter-and-sort-row{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-left: 5%;
+}
+
+.filter-section{
+  max-width: 50%;
+  margin-right: 5%;
+}
+
+.sort-section{
+  max-width: 50%;
+}
   .filter-button {
+    max-width: 100%;
+    margin-right: 5%;
     background-color: #1b1b1b;
     color: #ffffff;
-    padding: 15px 25px;
-    font-size: 18px;
+    font-size: 2vh;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -2808,22 +2868,23 @@ margin-bottom: 2%;
   
   .filters {
     max-width: 100%;
-    padding: 10px;
+    margin-right: 0;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3); 
-  
+    font-size: 1.7vh;
   }
   
   .sort-button {
-    margin-left: 10%;
-    font-size: 18px;
+    flex: 1;
+    max-width: 100%;
+    margin-left: 0;
+    font-size: 2vh;
     background-color: #1b1b1b;
     color: #ffffff;
-    padding: 15px 25px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -2831,8 +2892,9 @@ margin-bottom: 2%;
   
   .sort-options {
     max-width: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
+    font-size: 1.7vh;
+    margin-left: 0%;
+    margin-right: 0%;
     padding: 10px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.2);
@@ -2844,7 +2906,9 @@ margin-bottom: 2%;
   
   select {
     border-radius: 8px;
-    margin-left: 5px
+    margin-left: 2%;
+    font-size: 1.7vh;
+    
   } 
   
   /* Gallery.css */
@@ -2865,7 +2929,7 @@ margin-bottom: 2%;
   .gallery-card {
     position: relative;
     display: flex;
-    max-width: calc(20% - 0px); 
+    max-width: calc(40% ); 
     max-height:auto;
     background-color: #1b1b1b;
     border: 1px solid #ddd; 
@@ -2875,14 +2939,12 @@ margin-bottom: 2%;
     text-align: center;
     transition: transform 0.3s ease; 
     object-fit: cover;
-  
   }
   
   .gallery-card:hover {
     transform: scale(1.1); /* Increase the scale on hover (adjust the value as needed) */
     z-index: 1; /* Ensure the hovered card appears on top of others */
-    max-width: 20%; 
-    
+    max-width: 50%; 
   }
   
   .gallery-video {
@@ -2928,12 +2990,12 @@ margin-bottom: 2%;
   .gallery-info {
     display: none;
     flex-direction: column;
-    margin: auto;
-    margin-bottom: 5%;
+    margin: 0 3%;
+    margin-bottom: 1%;
   }
   
   .gallery-name {
-    font-size: 1.5rem; /* Set the font size for the product name */
+    font-size: 2vh; /* Set the font size for the product name */
     margin-bottom: 10px; /* Add margin between product name and description */
     text-decoration: none;
     color: white; /* Set a color for the product name */
@@ -2943,13 +3005,13 @@ margin-bottom: 2%;
   
   .gallery-date {
     color: white; /* Set a color for the product name */
-    font-size: 1.25rem;
+    font-size: 2vh;
     margin-top: -1%;
   }
   
   .gallery-media {
     color: white; 
-    font-size: 1.1rem;
+    font-size: 1.5vh;
     margin-top: -2.5%;
   }
   
@@ -2957,12 +3019,12 @@ margin-bottom: 2%;
     display: flex;
     align-content: center;
     justify-content: space-evenly;
-    margin:2% 41%;
+    margin:5% 15%;
   }
   
   .pagination-prev, .pagination-next{
     background: none;
-    font-size: 3em;
+    font-size: 5vh;
     margin: 0;
     padding: 0;
     color:#1b1b1b;
@@ -3014,6 +3076,7 @@ margin-bottom: 2%;
     border-radius: 10px;
     background-color: #F05941;
     font-size: 18px;
+    z-index: 2;
     transition: background-color 0.3s ease;
   }
   
@@ -3023,22 +3086,24 @@ margin-bottom: 2%;
   
   .details-container {
     display: flex;
-    max-width: 100%;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 2%;
     position: relative;
+    z-index: 2; 
     color: white;
   }
   
   .details-section {
     display: flex; 
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    margin: 0 auto;
+    flex-direction: column-reverse;
+    margin: 0 2%;
   }
   
   .details-title{
-    margin-right: 1%;
-    max-width: 25%;
+    margin: auto;
+    font-size: 2vh;
+    max-width: 100%;
     padding: 0 2%;
     border-radius: 8px;
     background: rgba(0, 0, 0, 0);
@@ -3049,18 +3114,17 @@ margin-bottom: 2%;
   }
   
   .image-section {  
-    display: flex;
     max-width: 100%;
-    margin-right: auto;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
   }
   
   .image-section img {
     max-width: 95%; 
-    max-height: 600px; 
-    margin-right:2%;
+    max-height:350px; 
     object-fit: cover;
-    margin: 0 auto; 
+    
   }
   
   .image-navigation {
@@ -3073,7 +3137,7 @@ margin-bottom: 2%;
   
   .image-navigation .prev,
   .image-navigation .next{
-    font-size: 2em;
+    font-size: 3vh;
     transition: background-color 0.3s ease;
   }
   
@@ -3084,17 +3148,16 @@ margin-bottom: 2%;
   
   .thumbnail-row {
     display: flex;
-    max-width:100%;
+    max-width: 100%;
+    margin-left: 1%;
     flex-direction: column;
     justify-content: center;
-    margin-top: 2%;
   }
   
   
   .thumbnail {
     max-width: 50px; 
     max-height: 50px; 
-    margin: 1% 2%;
     cursor: pointer;
     overflow: hidden;
     border: 2px solid #22092C; 
@@ -3118,7 +3181,6 @@ margin-bottom: 2%;
   .thumbnail:hover {
     border-color: #F05941; 
   }
-  
   /* Loading Css*/
   .loading{
     display: flex;

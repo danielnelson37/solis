@@ -364,8 +364,10 @@ const GalleryList = () => {
         <h1 className="gallery-title">GALLERY</h1>
         <SearchBar searchTerm={searchTerm} setSearchTerm={handleSearchChange} className="gallery-search-bar" />
         </div>
+        <div className="filter-and-sort-row">
         <GalleryFilterSection filters={filters} setFilters={setFilters} showFilters={showFilters} setShowFilters={setShowFilters} handleFilterChange={handleFilterChange} />
         <SortSection sortOptions={sortOptions} sortBy={sortBy} setSortBy={setSortBy} showSort={showSort} setShowSort={setShowSort} handleSortChange={handleSortChange} />
+      </div>
       </div>
 
       {loading ? (
