@@ -27,7 +27,7 @@ return (
   <div className='home-row'>
   <div className='home-container'>
   <div className="video-container">
-    <video className="landingpage-image" autoPlay muted width="100%" height="100%" loop >
+    <video className="landingpage-image" autoPlay muted width="100%" height="100%" loop style={{ pointerEvents: 'none' }} >
       <source src='/solis/videos/intro.mp4' type="video/mp4" />
       Your browser does not support the video tag.
     </video>

@@ -131,7 +131,7 @@ const [loading, setLoading] = useState(true);
         </div>
         <div className="upcoming-projects-column-2">
         <div className="image-with-description" id="chrome-container" >
-      <video autoPlay muted width="auto" loop >
+      <video autoPlay muted width="auto" loop style={{ pointerEvents: 'none' }}>
             <source src='/solis/videos/heartinchrome.mp4' type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -160,7 +160,7 @@ const [loading, setLoading] = useState(true);
 
       <section className="contact-container">
         <div className='contact-img'>
-          <video className="contact-image" autoPlay muted width="auto" loop >
+          <video className="contact-image" autoPlay muted width="auto" loop style={{ pointerEvents: 'none' }}>
             <source src='/solis/videos/skull.mp4' type="video/mp4" />
             Your browser does not support the video tag.
           </video>
