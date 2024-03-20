@@ -71,12 +71,6 @@ const GalleryCard = ({ product, currentPage }) => {
         ) : (
           <img src={"/solis" + product.image[0]} alt={product.name} className="gallery-image" />
         )}
-        
-      <div className="gallery-info">
-        <h3 className="gallery-name">{product.name}</h3>
-        <h3 className="gallery-date">{product.date}</h3>
-        <p className="gallery-media">{product.media}</p>
-      </div>
       </Link>
     </div>
   );

@@ -842,104 +842,27 @@ select {
 }
 
 .gallery-list {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 100%;
-  justify-content: center;/* Adjust as needed */
-  padding-top: 2%;
-  
+  width: 96%;
+  margin: 2% auto;
+  columns: 3;
+  column-gap: 1%;
 }
 
 /* GalleryCard.css*/
 .gallery-card {
-  position: relative;
-  display: flex;
-  max-width: calc(20% - 0px); 
-  max-height:auto;
-  background-color: #1b1b1b;
-  border: 1px solid #ddd; 
-  border-radius: 8px; 
-  overflow: hidden; 
-  margin: 2%; 
-  text-align: center;
-  transition: transform 0.3s ease; 
-  object-fit: cover;
-
+  width: 100%;
+  margin-bottom: 2%;
 }
 
-.gallery-card:hover {
-  transform: scale(1.1); /* Increase the scale on hover (adjust the value as needed) */
-  z-index: 1; /* Ensure the hovered card appears on top of others */
-  max-width: 20%; 
-  
-}
 
+.gallery-image,
 .gallery-video {
   max-width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease; 
-}
-
-.gallery-card:hover .gallery-video {
-  max-width: auto;
-  max-height: 100%;
-  height: auto;
-  object-fit: cover;
-  transition: transform 0.3s ease; 
-}
-
-
-.gallery-image {
-  max-width: 100%; 
-  height: 100%; 
-  object-fit: cover;
-  background-color: white;
-  transition: transform 0.3s ease; 
-}
-
-.gallery-card:hover .gallery-image {
- max-width:auto;
- max-height:100%;
- height: auto;
- object-fit: contain;
-
+  border-radius: 8px;
 }
 
 .gallery-card a {
   text-decoration: none;
-}
-
-.gallery-card:hover .gallery-info{
-  display: flex;
-}
-
-.gallery-info {
-  display: none;
-  flex-direction: column;
-  margin: auto;
-  margin-bottom: 5%;
-}
-
-.gallery-name {
-  font-size: 1.5rem; /* Set the font size for the product name */
-  margin-bottom: 10px; /* Add margin between product name and description */
-  text-decoration: none;
-  color: white; /* Set a color for the product name */
-  text-align: center;
-  
-}
-
-.gallery-date {
-  color: white; /* Set a color for the product name */
-  font-size: 1.25rem;
-  margin-top: -1%;
-}
-
-.gallery-media {
-  color: white; 
-  font-size: 1.1rem;
-  margin-top: -2.5%;
 }
 
 .pagination {
@@ -1710,98 +1633,29 @@ select {
   max-width: 100%;
   height: auto;
 }
+/* Gallery.css */
+.gallery-list-container{
+  max-width: 100%;
+}
+
+.gallery-list {
+  width: 96%;
+  margin: 2% auto;
+  columns: 3;
+  column-gap: 1%;
+}
 
 /* GalleryCard.css*/
 .gallery-card {
-  position: relative;
-  display: flex;
-  max-width: calc(30% - 10px); 
-  max-height:auto;
-  background-color: #1b1b1b;
-  border: 1px solid #ddd; /* Add a border for separation */
-  border-radius: 8px; /* Add some border radius for a softer look */
-  overflow: hidden; /* Hide overflow for better image presentation */
-  margin: 2%; /* Add margin for spacing between cards */
-  text-align: center;
-  transition: transform 0.3s ease; /* Add a smooth transition effect */
-  object-fit: cover;
-
+  width: 100%;
+  margin-bottom: 2%;
 }
 
-.gallery-card:hover {
-  transform: scale(1.2); /* Increase the scale on hover (adjust the value as needed) */
-  z-index: 1; /* Ensure the hovered card appears on top of others */
-  max-width: 20%; 
-  
-}
 
+.gallery-image,
 .gallery-video {
   max-width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease; 
-}
-
-.gallery-card:hover .gallery-video {
-  max-width: auto;
-  max-height: 100%;
-  height: auto;
-  object-fit: cover;
-  transition: transform 0.3s ease; 
-}
-
-
-.gallery-image {
-  max-width: 100%; /* Set the width of the image */
-  height: 100%; /* Maintain the aspect ratio of the image */
-  object-fit: cover;
-  background-color: white;
-  transition: transform 0.3s ease; 
-}
-
-.gallery-card:hover .gallery-image {
- max-width:auto;
- max-height:100%;
- height: auto;
- object-fit: contain;
-
-}
-
-.gallery-card a {
-  text-decoration: none;
-}
-
-.gallery-card:hover .gallery-info{
-  display: flex;
-}
-
-.gallery-info {
-  display: none;
-  flex-direction: column;
-  margin: 2% 10%;
-  margin-bottom: 5%;
-}
-
-.gallery-name {
-  font-size: 1.2rem; /* Set the font size for the product name */
-  margin-bottom: 10px; /* Add margin between product name and description */
-  text-decoration: none;
-  margin: 2% 5%;
-  color: white; /* Set a color for the product name */
-  text-align: center;
-}
-
-.gallery-date {
-  color: white; /* Set a color for the product name */
-  font-size: 1.1rem;
-  margin-top: -1%;
-}
-
-.gallery-media {
-  color: white; /* Set a color for the product name */
-  font-size: .8rem;
-  margin-bottom: 5%;
-  margin: 0 5%;
+  border-radius: 8px;
 }
 
 .pagination {
@@ -2848,112 +2702,37 @@ margin-bottom: 2%;
     border-radius: 8px;
     margin-left: 2%;
     font-size: 1.7vh;
-    
   } 
   
   /* Gallery.css */
-  .gallery-list-container{
-    max-width: 100%;
-  }
-  
-  .gallery-list {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-    justify-content: center;/* Adjust as needed */
-    padding-top: 2%;
-    
-  }
-  
-  /* GalleryCard.css*/
-  .gallery-card {
-    position: relative;
-    display: flex;
-    max-width: calc(20vh); 
-    max-height: auto;
-    background-color: #1b1b1b;
-    border: 1px solid #ddd; 
-    border-radius: 8px; 
-    overflow: hidden; 
-    margin: 2%; 
-    text-align: center;
-    transition: transform 0.3s ease; 
-    object-fit: cover;
-  }
-  
-  .gallery-card:hover {
-     
-     max-height: auto;
-    max-width: 25vh; 
-  }
-  
-  .gallery-video {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease; 
-  }
-  
-  .gallery-card:hover .gallery-video {
-    max-width: auto;
-    max-height: 100%;
-    height: auto;
-    object-fit: cover;
-    transition: transform 0.3s ease; 
-  }
-  
-  
-  .gallery-image {
-    max-width: 100%; 
-    height: 100%; 
-    object-fit: cover;
-    background-color: white;
-    transition: transform 0.3s ease; 
-  }
-  
-  .gallery-card:hover .gallery-image {
-   max-width:auto;
-   height: auto;
-   object-fit: cover;
-  
-  }
-  
-  .gallery-card a {
-    text-decoration: none;
-  }
-  
-  .gallery-card:hover .gallery-info{
-    display: flex;
-  }
-  
-  .gallery-info {
-    display: none;
-    flex-direction: column;
-    margin: 0 3%;
-    margin-bottom: 1%;
-  }
-  
-  .gallery-name {
-    font-size: 3vh; /* Set the font size for the product name */
-    margin-bottom: 10px; /* Add margin between product name and description */
-    text-decoration: none;
-    color: white; /* Set a color for the product name */
-    text-align: center;
-    
-  }
-  
-  .gallery-date {
-    color: white; /* Set a color for the product name */
-    font-size: 3vh;
-    margin-top: -1%;
-  }
-  
-  .gallery-media {
-    color: white; 
-    font-size: 2vh;
-    margin-top: -2.5%;
-  }
-  
+.gallery-list-container{
+  max-width: 100%;
+}
+
+.gallery-list {
+  width: 96%;
+  margin: 2% auto;
+  columns: 3;
+  column-gap: 1%;
+}
+
+/* GalleryCard.css*/
+.gallery-card {
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+
+.gallery-image,
+.gallery-video {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.gallery-card a {
+  text-decoration: none;
+}
+
   .pagination {
     display: flex;
     align-content: center;
@@ -4154,108 +3933,33 @@ margin-bottom: 2%;
   } 
   
   /* Gallery.css */
-  .gallery-list-container{
-    max-width: 100%;
-  }
-  
-  .gallery-list {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-    justify-content: center;/* Adjust as needed */
-    padding-top: 2%;
-    
-  }
-  
-  /* GalleryCard.css*/
-  .gallery-card {
-    position: relative;
-    display: flex;
-    max-width: calc(40% ); 
-    max-height:auto;
-    background-color: #1b1b1b;
-    border: 1px solid #ddd; 
-    border-radius: 8px; 
-    overflow: hidden; 
-    margin: 2%; 
-    text-align: center;
-    transition: transform 0.3s ease; 
-    object-fit: cover;
-  }
-  
-  .gallery-card:hover {
-    transform: scale(1.1); /* Increase the scale on hover (adjust the value as needed) */
-    z-index: 1; /* Ensure the hovered card appears on top of others */
-    max-width: 50%; 
-  }
-  
-  .gallery-video {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease; 
-  }
-  
-  .gallery-card:hover .gallery-video {
-    max-width: auto;
-    max-height: 100%;
-    height: auto;
-    object-fit: cover;
-    transition: transform 0.3s ease; 
-  }
-  
-  
-  .gallery-image {
-    max-width: 100%; 
-    height: 100%; 
-    object-fit: cover;
-    background-color: white;
-    transition: transform 0.3s ease; 
-  }
-  
-  .gallery-card:hover .gallery-image {
-   max-width:auto;
-   max-height:100%;
-   height: auto;
-   object-fit: contain;
-  
-  }
-  
-  .gallery-card a {
-    text-decoration: none;
-  }
-  
-  .gallery-card:hover .gallery-info{
-    display: flex;
-  }
-  
-  .gallery-info {
-    display: none;
-    flex-direction: column;
-    margin: 0 3%;
-    margin-bottom: 1%;
-  }
-  
-  .gallery-name {
-    font-size: 2vh; /* Set the font size for the product name */
-    margin-bottom: 10px; /* Add margin between product name and description */
-    text-decoration: none;
-    color: white; /* Set a color for the product name */
-    text-align: center;
-    
-  }
-  
-  .gallery-date {
-    color: white; /* Set a color for the product name */
-    font-size: 2vh;
-    margin-top: -1%;
-  }
-  
-  .gallery-media {
-    color: white; 
-    font-size: 1.5vh;
-    margin-top: -2.5%;
-  }
+.gallery-list-container{
+  max-width: 100%;
+}
+
+.gallery-list {
+  width: 96%;
+  margin: 2% auto;
+  columns: 3;
+  column-gap: 1%;
+}
+
+/* GalleryCard.css*/
+.gallery-card {
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+
+.gallery-image,
+.gallery-video {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.gallery-card a {
+  text-decoration: none;
+}
   
   .pagination {
     display: flex;
