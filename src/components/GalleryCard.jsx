@@ -64,7 +64,7 @@ const GalleryCard = ({ product, currentPage }) => {
     <div className="gallery-card">
     <Link to={`${product.id}?page=${currentPage}`}>
     {hasVideo ? (
-          <video className="gallery-video" autoPlay width="auto" loop muted={!isHovered} onMouseOver={handleHover} onMouseLeave={handleMouseLeave}>
+          <video className="gallery-video" autoPlay width="auto" loop muted={!isHovered} onMouseOver={handleHover} onMouseLeave={handleMouseLeave} playsInline controls={false}>
             <source src={"/solis" + product.image[0]} type="video/mp4" />
             Your browser does not support the video tag.
           </video>

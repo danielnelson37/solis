@@ -209,6 +209,7 @@ const GalleryItemDetails = () => {
                 className="gallery-video"
                 autoPlay
                 width="500"
+                playsInline
                 controls
                 src={"/solis" + product.image[currentImageIndex]}
               >
@@ -227,7 +228,7 @@ const GalleryItemDetails = () => {
                   onClick={() => handleThumbnailClick(index)}
                 >
                   {image.includes('/videos/') ? (
-                    <video >
+                    <video playsInline controls={false}>
                       <source src={"/solis" + image} type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
