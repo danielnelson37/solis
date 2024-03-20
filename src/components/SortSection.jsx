@@ -6,7 +6,7 @@ const SortSection = ({ sortOptions, sortBy, setSortBy, showSort, setShowSort, ha
   return (
     <div className="sort-section">
       <button className="sort-button" onClick={() => setShowSort(!showSort)}>
-      <FontAwesomeIcon icon={faSort} size="2x" />
+      <FontAwesomeIcon icon={faSort} size="1x" />
       </button>
 
       {showSort && (

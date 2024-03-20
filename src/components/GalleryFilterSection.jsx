@@ -6,7 +6,7 @@ const GalleryFilterSection = ({ filters, setFilters, showFilters, setShowFilters
     return (
         <div className="filter-section">
             <button className="filter-button" onClick={() => setShowFilters(!showFilters)}>
-            <FontAwesomeIcon icon={faFilter} size="2x" />
+            <FontAwesomeIcon icon={faFilter} size="1x" />
             </button>
        
 

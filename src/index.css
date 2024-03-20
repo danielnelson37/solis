@@ -1059,7 +1059,7 @@ select {
   max-width: 100%;
   align-content: center;
   margin-top: 3%;
-  background-color: #1b1b1b; 
+  background-color: black; 
   color: white; 
 }
 
@@ -2724,7 +2724,7 @@ margin-bottom: 2%;
 .gallery-list {
   width: 96%;
   margin: 2% auto;
-  columns: 3;
+  columns: 2;
   column-gap: 1%;
 }
 
@@ -3891,7 +3891,7 @@ margin-bottom: 2%;
   .filter-button {
     max-width: 100%;
     margin-right: 5%;
-    background-color: #1b1b1b;
+    background-color: black;
     color: #ffffff;
     font-size: 2vh;
     border: none;
@@ -3916,7 +3916,7 @@ margin-bottom: 2%;
     max-width: 100%;
     margin-left: 0;
     font-size: 2vh;
-    background-color: #1b1b1b;
+    background-color: black;
     color: #ffffff;
     border: none;
     border-radius: 8px;
@@ -3952,7 +3952,7 @@ margin-bottom: 2%;
 .gallery-list {
   width: 96%;
   margin: 2% auto;
-  columns: 3;
+  columns: 2;
   column-gap: 1%;
 }
 
