@@ -110,7 +110,7 @@ const [loading, setLoading] = useState(true);
         </div>
         <div className="image-with-description-v1">
         <img src="/solis/images/SAP.JPG" alt="desc"/>
-        <p className="image-text-3">  Crafted during my sophomore year at Parsons School of Design, SAP (FORTHESOUL), 2021, represents a convergence of 3D modeling with AutoCAD, incorporating components such as a PIR motion sensor, DFPlayer, SD card, jumper wires, and Arduino Uno. Within the intricate model, the sculpture delivers a spoken narrative drawn from a fusion of written words by Jean-Paul Sartre, Albert Camus, and my own alterations through text-to-speech software.
+        <p className="image-text-3"> SAP (FORTHESOUL), represents a convergence of 3D modeling with AutoCAD, incorporating components such as a PIR motion sensor, DFPlayer, SD card, jumper wires, and Arduino Uno. Within the intricate model, the sculpture delivers a spoken narrative drawn from a fusion of written words by Jean-Paul Sartre, Albert Camus, and my own alterations through text-to-speech software.
         </p>
         </div>
         <div className="image-with-description-v1">
