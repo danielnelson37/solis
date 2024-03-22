@@ -1,7 +1,7 @@
 body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   margin: 0;
-  overflow-x: hidden !important;/* Prevents horizontal scrollbars due to large gradients */
+  overflow-x: clip !important;/* Prevents horizontal scrollbars due to large gradients */
   background:
     linear-gradient(rgba(61, 66, 66, 0.189), transparent),
     linear-gradient(to top left, rgb(39, 39, 39), transparent),
@@ -1164,7 +1164,7 @@ select {
   body {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     margin: 0;
-    overflow-x: hidden;/* Prevents horizontal scrollbars due to large gradients */
+    overflow-x: clip;/* Prevents horizontal scrollbars due to large gradients */
     background:
       linear-gradient(rgba(61, 66, 66, 0.189), transparent),
       linear-gradient(to top left, rgb(39, 39, 39), transparent),
@@ -1807,7 +1807,7 @@ margin-bottom: 2%;
   body {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     margin: 0;
-    overflow-x: hidden;/* Prevents horizontal scrollbars due to large gradients */
+    overflow-x: clip;/* Prevents horizontal scrollbars due to large gradients */
     background:
       linear-gradient(rgba(61, 66, 66, 0.189), transparent),
       linear-gradient(to top left, rgb(39, 39, 39), transparent),
@@ -2747,7 +2747,7 @@ margin-bottom: 2%;
   body {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     margin: 0;
-    overflow-x: hidden;/* Prevents horizontal scrollbars due to large gradients */
+    overflow-x: clip;/* Prevents horizontal scrollbars due to large gradients */
     background:
       linear-gradient(rgba(61, 66, 66, 0.189), transparent),
       linear-gradient(to top left, rgb(39, 39, 39), transparent),
@@ -3643,7 +3643,7 @@ margin-bottom: 2%;
   width: 96%;
   margin: 2% auto;
   columns: 2;
-  column-gap: 1%;
+  column-gap: 2%;
 }
 
 /* GalleryCard.css*/
@@ -3962,7 +3962,7 @@ margin-bottom: 2%;
   body {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     margin: 0;
-    overflow-x: hidden;/* Prevents horizontal scrollbars due to large gradients */
+    overflow-x: clip;/* Prevents horizontal scrollbars due to large gradients */
     background:
       linear-gradient(rgba(61, 66, 66, 0.189), transparent),
       linear-gradient(to top left, rgb(39, 39, 39), transparent),
@@ -4873,7 +4873,7 @@ margin-bottom: 2%;
   width: 96%;
   margin: 2% auto;
   columns: 2;
-  column-gap: 1%;
+  column-gap: 2.5%;
 }
 
 /* GalleryCard.css*/
