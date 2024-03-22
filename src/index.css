@@ -2908,6 +2908,7 @@ margin-bottom: 2%;
     text-align: center;
     display: flex;
     flex-direction: column;
+    overflow: clip;
   }
   
   .home-row {
@@ -3001,7 +3002,7 @@ margin-bottom: 2%;
     display: flex;
     justify-content: center;
     width: 95%;
-    margin-right: 9.5%;
+    margin-right: 10%;
   }
   
   .featured-art-icon-row .prev,

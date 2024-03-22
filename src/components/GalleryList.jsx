@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import GalleryCard from './GalleryCard';
 import SearchBar from './SearchBar';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import GalleryFilterSection from './GalleryFilterSection';
 import SortSection from './SortSection';
 import Loading from './Loading';
@@ -9,7 +9,7 @@ import products from '../productsData';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronRight, faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons'; 
 
-const itemsPerPage = 12;
+const itemsPerPage = 16;
 const maxButtonsToShow = 3;
 
 const GalleryList = () => {
