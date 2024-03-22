@@ -874,7 +874,8 @@ select {
   border-radius: 8px;
 }
 
-.gallery-image:hover{
+.gallery-image:hover, 
+.gallery-video:hover{
   border:2px #F05941 solid;
 }
 
@@ -1056,6 +1057,7 @@ select {
   display: flex;
   flex-direction: column;
   max-width: 100%;
+  max-height: 100%;
   align-content: center;
   margin-top: 3%;
   background-color: black; 
@@ -1736,16 +1738,15 @@ select {
 
 .image-section {  
   max-width: 100%;
-display: flex;
-justify-content: center;
-margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
 }
 
 .image-section img {
   max-width: 95%; 
   max-height: 600px; 
   object-fit: cover;
-  
 }
 
 .image-navigation {
@@ -2777,7 +2778,7 @@ margin-bottom: 2%;
   }
   
   #logo {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: bold;
     text-decoration: none;
     color: #FFF;
@@ -2912,6 +2913,7 @@ margin-bottom: 2%;
     display: flex;
     flex-direction: column;
     overflow: clip;
+    max-width: 100%;
   }
   
   .home-row {
@@ -3876,7 +3878,7 @@ margin-bottom: 2%;
   .logo-information {
     width: 15%;
     padding-left: 1vh;
-    font-size: 1.2vh;
+    font-size: 1.5vh;
   }
   
   .navigation-links {
